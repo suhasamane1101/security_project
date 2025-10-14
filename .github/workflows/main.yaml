@@ -1,0 +1,15 @@
+name: Placeholder CI
+
+# This triggers the workflow on every push or pull request to the main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show message
+        run: echo "✅ This is a placeholder workflow. Real CI/CD steps will be added after the project is complete."
